@@ -54,7 +54,7 @@ vars:
 #       /domain
 #         /entity
 #         /repository
-#           /repo_impl.dart
+#           /repo.dart
 #         /usecase
 #       /presentation
 #         /logic
@@ -63,3 +63,14 @@ vars:
 #           /event.dart
 #         /page
 #         /widget
+# /test
+#   /src
+#     /{{ feature_name}}
+#       /data
+#         /datasource
+#           /remote_test.dart
+#           /local_test.dart
+#         /model
+#       /domain
+#         /usecase
+      
