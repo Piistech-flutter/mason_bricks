@@ -1,0 +1,10 @@
+import '../datasource/remote.dart';
+import 'package:http/http.dart';
+
+class {{name.pascalCase()}}RemoteDatasourceImpl extends {{name.pascalCase()}}RemoteDatasource {
+  final Client client;
+
+  {{name.pascalCase()}}RemoteDatasourceImpl({
+    required this.client,
+  });
+}

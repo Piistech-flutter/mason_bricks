@@ -1,3 +1,3 @@
 # 0.1.0+1
 
-- TODO: Describe initial release.
+- Added: barrel file to refactor all imports in a single place.

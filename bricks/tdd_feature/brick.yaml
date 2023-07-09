@@ -30,46 +30,71 @@ vars:
     type: string
     description: Names of the folders, files, and clasees to be created in TDD manner
     default: Login
-    prompt: What is the name of this feature?
+    prompt: Name
   
   has_data_layer:
     type: boolean
     description: Determines if the feature has 'Data' layer in it.
     default: true
-    prompt: Do you need 'Data' layer?
+    prompt: Include 'Data' layer
+  
+  has_local_data_source:
+    type: boolean
+    description: Determines if the Data layer has 'Local' data source in it.
+    default: true
+    prompt: Has 'Local data source'
+  
+  has_remote_data_source:
+    type: boolean
+    description: Determines if the Data layer has 'Remote' data source in it.
+    default: true
+    prompt: Has 'Remote data source'
+  
+  usecase:
+    type: string
+    description: Define a usecase to start with
+    default: login
+    prompt: First usecase
+  
+  has_presentation:
+    type: boolean
+    description: Determines if the feature has 'Presentation' layer in it.
+    default: true
+    prompt: Include presentation
+  
+  include_page:
+    type: boolean
+    description: Determines if the feature has a scaffold based 'Page' in it.
+    default: true
+    prompt: Include page
 
+  page:
+    type: string
+    description: Define a page name
+    default: login
+    prompt: Page
 
-# /lib
-#   /src
-#     /{{ name }}
-#       /data
-#         /datasource
-#           /remote.dart
-#           /remote_impl.dart
-#           /local.dart
-#           /local_impl.dart
-#         /model
-#         /repository
-#           /repo_impl.dart
-#       /domain
-#         /entity
-#         /repository
-#           /repo.dart
-#         /usecase
-#       /presentation
-#         /logic
-#           /bloc.dart
-#           /state.dart
-#           /event.dart
-#         /page
-#         /widget
-# /test
-#   /src
-#     /{{ feature_name}}
-#       /data
-#         /datasource
-#           /remote_test.dart
-#           /local_test.dart
-#         /model
-#       /domain
-#         /usecase
+  stateFull:
+    type: boolean
+    description: Make the page state full.
+    default: true
+    prompt: Statefull?
+
+  theme:
+    type: boolean
+    description: Apply theme-based bloc builder.
+    default: true
+    prompt: Theme?
+
+  logic:
+    type: boolean
+    description: Include logic folder.
+    default: true
+    prompt: Bloc?
+
+  logic_name:
+    type: string
+    description: Define the bloc name
+    default: login
+    prompt: Bloc name
+

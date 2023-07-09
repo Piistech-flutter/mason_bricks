@@ -1,0 +1,16 @@
+import 'package:test/test.dart';
+import '../../../../../lib/src/{{name.snakeCase()}}/{{name.snakeCase()}}.dart';
+
+void main() {
+  late MockClient mockHttpClient;
+  late {{name.pascalCase()}}RemoteDatasourceImpl dataSource;
+
+  setUp(() {
+    mockHttpClient = MockClient();
+    dataSource = {{name.pascalCase()}}RemoteDatasourceImpl(
+      client: mockHttpClient,
+    );
+  });
+
+  //TODO:
+}

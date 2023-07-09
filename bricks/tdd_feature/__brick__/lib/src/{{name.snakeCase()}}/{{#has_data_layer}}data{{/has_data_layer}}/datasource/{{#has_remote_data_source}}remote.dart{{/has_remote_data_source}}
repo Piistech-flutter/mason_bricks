@@ -1,0 +1,4 @@
+import 'package:mockito/annotations.dart';
+
+@GenerateNiceMocks([MockSpec<{{name.pascalCase()}}RemoteDatasource>()])
+abstract class {{name.pascalCase()}}RemoteDatasource {}
